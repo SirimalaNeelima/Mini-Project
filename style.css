@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    color: rgb(18, 7, 7);
+    overflow-x: hidden;
+}
+
+/* designing input&button container */
+.inputbox-button {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* designing heading  */
+h1 {
+    margin: 20px 0;
+    color: black;
+}
+
+/* designing input-box  */
+input {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: black;
+}
+
+/* designing button  */
+#data-btn {
+    background-color: #21bbc9;
+    color: rgb(38, 26, 210);
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 9px;
+}
+
+/* designing button hover  */
+#data-btn:hover {
+    background-color: #e24d0e;
+    padding: 10px 33px;
+}
+
+/* all info about repo container */
+.container {
+    background-color: #eaf1ed;
+    display: none;
+}
+
+/* image box desiging  */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+/* image desiging  */
+#img {
+    border-radius: 85px;
+}
+
+/* info container desiging  */
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* profile info design which takes lable and info  */
+.profile-info {
+    display: flex;
+    background-color: #14afca;
+    margin: 10px 20px;
+    padding: 20px 10px;
+    font-size: 23px;
+}
+
+/* label desiging  */
+label {
+    padding: 0 25px;
+}
+
+/* designing grid container  */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 0;
+}
+
+/* desiging repository info */
+.repository {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(32, 24, 24);
+    margin: 25px;
+}
+
+/* designing repository heading  */
+.repository h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* designing repository paragraph */
+.repository p {
+    font-size: 14px;
+    color: #8dd216;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+/* designing repository link  */
+.repository a {
+    color: rgb(187, 54, 140);
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* designing repository link hover */
+.repository a:hover {
+    text-decoration: underline;
+}
+
+
+/* add media Queries  */
+@media screen and (max-width: 550px) {
+    input {
+        padding: 8px 10px;
+    }
+
+    .inputbox-button {
+        padding: 16px;
+    }
+
+    #data-btn {
+        padding: 10px 40px;
+    }
+
+    #img {
+        height: 300px;
+    }
+
+    .image {
+        height: 400px;
+    }
+
+    .profile-info {
+        margin: 5px;
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .repository {
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 40px 5px;
+    }
+
+    #img {
+        height: 200px;
+    }
+
+    .image {
+        height: 300px;
+    }
+}
